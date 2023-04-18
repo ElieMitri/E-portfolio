@@ -4,7 +4,16 @@ import { BsLink45Deg } from "react-icons/bs";
 
 const Project = ({ image, title, languages, description, website, github }) => {
   return (
-    <li className="project">
+    <li
+      className="project"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="true"
+    >
       <div className="project__wrapper">
         <img src={image} className="project__img" alt="" />
         <div className="project__wrapper--bg"></div>

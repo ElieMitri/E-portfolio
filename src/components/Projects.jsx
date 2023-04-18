@@ -3,13 +3,25 @@ import Project from "./Project";
 import Library from "../assets/Screenshot (5).png";
 import Movie from "../assets/Screenshot (35).png";
 import Virtual from "../assets/Screenshot (52).png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Projects = () => {
   return (
     <section id="projects">
       <div className="container">
         <div className="row">
-          <h1 className="section__title">
+          <h1
+            className="section__title"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+          >
             Here are some of my <span className="purple">projects</span>
           </h1>
           <ul className="project__list">

@@ -416,6 +416,22 @@ nav {
   margin-bottom: 20px;
 }
 
+.loader {
+  font-size: 70px;
+  color: rgb(156, 44, 190);
+  animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .form__submit {
   background-color: rgb(156, 44, 190);
   border: 2px solid rgb(156, 44, 190);

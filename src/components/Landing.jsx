@@ -8,8 +8,13 @@ import logo from "../assets/logo.png";
 import { HiOutlineEnvelope, HiOutlineXMark } from "react-icons/hi2";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { BiSun } from "react-icons/bi";
+import { AiOutlineLoading } from "react-icons/ai";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Landing = () => {
+  const [loading, setLoading] = useState(true);
   const form = useRef();
   function contact(event) {
     event.preventDefault();
@@ -136,9 +141,40 @@ const Landing = () => {
       </nav>
       <header className="header">
         <div className="header__content">
-          <h1 className="title">Hey</h1>
-          <h1 className="title purple">I'm Elie.</h1>
-          <p className="header__para">
+          <h1
+            className="title"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+          >
+            Hey
+          </h1>
+          <h1
+            className="title purple"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+          >
+            I'm Elie.
+          </h1>
+          <p
+            className="header__para"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+          >
             I'm a <b className="purple">Frontend Software Engineer</b> with a
             strong passion for building web applications with great user
             experiences.
@@ -161,7 +197,7 @@ const Landing = () => {
       </a>
       <div className="modal">
         <div className="modal__half modal__about">
-          <h3 className="modal__title modal__title--about">
+          <h3 className="modal__title modal__title--about" data-aos="fade-up">
             Here's a bit about me.
           </h3>
           <h4 className="modal__sub-title modal__sub-title--about">
@@ -255,7 +291,7 @@ const Landing = () => {
             </button>
           </form>
           <div className="modal__overlay modal__overlay--loading">
-            <i className="fas fa-spinner"></i>
+            <AiOutlineLoading className="loader" />
           </div>
           <div className="modal__overlay modal__overlay--success">
             Thanks for the message! Looking forward to speaking to you soon.
