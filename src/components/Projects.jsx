@@ -25,6 +25,14 @@ const Projects = () => {
             Here are some of my <span className="purple">projects</span>
           </h1>
           <ul className="project__list">
+              <Project
+                image={Virtual}
+                title="Virtual Internship"
+                languages="Html, Css, Javascript, React"
+                description="Vitrtual Internship is the perfect place for you to see the prices of nfts and see the authors and owners of these nfts."
+                website="https://elie-internship.vercel.app/"
+                github="https://github.com/ElieMitri/elie-internship"
+              />
             <Project
               image={Library}
               title="Library"
@@ -40,14 +48,6 @@ const Projects = () => {
               description="Movie finder is a website where you can search your favorite movie and now which year it came out."
               website="https://final-seven-ashy.vercel.app/"
               github="https://github.com/ElieMitri/Final"
-            />
-            <Project
-              image={Virtual}
-              title="Virtual Internship"
-              languages="Html, Css, Javascript, React"
-              description="Vitrtual Internship is the perfect place for you to see the prices of nfts and see the authors and owners of these nfts."
-              website="https://elie-internship.vercel.app/"
-              github="https://github.com/ElieMitri/elie-internship"
             />
           </ul>
         </div>
