@@ -115,26 +115,20 @@ const Landing = () => {
               Contact
             </a>
           </li>
-          <li className="nav__link click">
+          <li className="nav__link click" onClick={toggleDarkMode}>
             {darkMode ? (
               <a
                 href="#"
                 className="nav__link--anchor link__hover-effect link__hover-effect--black"
               >
-                <MdOutlineDarkMode
-                  className="dark__mode--button"
-                  onClick={toggleDarkMode}
-                />
+                <MdOutlineDarkMode className="dark__mode--button mode" />
               </a>
             ) : (
               <a
                 href="#"
                 className="nav__link--anchor link__hover-effect link__hover-effect--black"
               >
-                <BiSun
-                  className="dark__mode--button"
-                  onClick={toggleDarkMode}
-                />
+                <BiSun className="dark__mode--button mode" />
               </a>
             )}
           </li>
