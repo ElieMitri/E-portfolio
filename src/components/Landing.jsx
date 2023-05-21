@@ -5,6 +5,9 @@ import shape_2 from "../assets/triangle.svg";
 import shape_3 from "../assets/squiggly.svg";
 import shape_4 from "../assets/circle.svg";
 import logo from "../assets/logo.png";
+import nextJS from "../assets/png-transparent-next-js-hd-logo-removebg-preview.png";
+import typescript from "../assets/png-transparent-typescript-hd-logo-thumbnail.png";
+import redux from "../assets/png-transparent-redux-react-logo-javascript-dq-purple-violet-text-thumbnail-removebg-preview.png";
 import { HiOutlineEnvelope, HiOutlineXMark } from "react-icons/hi2";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { BiSun } from "react-icons/bi";
@@ -76,7 +79,7 @@ const Landing = () => {
       setDarkMode(false);
     }
     if (contrastToggle && darkMode) {
-      document.body.classList += " dark-theme";
+      document.body.classList += "dark-theme";
     } else {
       document.body.classList.remove("dark-theme");
     }
@@ -243,6 +246,18 @@ const Landing = () => {
                 alt=""
               />
               <span className="language__name">React</span>
+            </figure>
+            <figure className="modal__language">
+              <img className="modal__language--img" src={nextJS} alt="" />
+              <span className="language__name">NextJs</span>
+            </figure>
+            <figure className="modal__language">
+              <img className="modal__language--img" src={typescript} alt="" />
+              <span className="language__name">Typescript</span>
+            </figure>
+            <figure className="modal__language">
+              <img className="modal__language--img" src={redux} alt="" />
+              <span className="language__name">Redux</span>
             </figure>
           </div>
         </div>
