@@ -3,6 +3,7 @@ import Project from "./Project";
 import Library from "../assets/Screenshot (5).png";
 import Movie from "../assets/Screenshot (35).png";
 import Virtual from "../assets/Screenshot (52).png";
+import Personal from "../assets/Screenshot (375).png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -48,6 +49,14 @@ const Projects = () => {
               description="Movie finder is a website where you can search your favorite movie and now which year it came out."
               website="https://final-seven-ashy.vercel.app/"
               github="https://github.com/ElieMitri/Final"
+            />
+            <Project
+              image={Personal}
+              title="Personal Trainer"
+              languages="Html, Css, Javascript, React"
+              description="This is an example of a personal trainer website which has many features that can be added."
+              website="https://elie-lifts.vercel.app/"
+              github="https://github.com/ElieMitri/elie.lifts"
             />
           </ul>
         </div>
